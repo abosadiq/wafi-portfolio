@@ -1,0 +1,63 @@
+.header {
+  grid-column: 2/-1;
+  background-image: linear-gradient(
+      to right,
+      rgba(#4299e1, 0.8),
+      rgba(#63b3ed, 0.8)
+    ),
+    url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  @media only screen and(max-width:850px) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+
+  &__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+
+    &--1 {
+      font-size: 9rem;
+      @media only screen and(max-width:850px) {
+        font-size: 7rem;
+      }
+    }
+
+    &--3 {
+      font-size: 4rem;
+      @media only screen and(max-width:850px) {
+        font-size: 2rem;
+      }
+    }
+
+    &--6 {
+      font-size: 2rem;
+      margin-top: 2rem;
+      @media only screen and(max-width:850px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 2rem;
+    display: block;
+    text-decoration: none;
+    padding: 1.5rem 0;
+    border: none;
+    background-color: transparent;
+    color: #f8f8f8;
+    font-size: 1.6rem;
+    border: 1px solid #f8f8f8;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

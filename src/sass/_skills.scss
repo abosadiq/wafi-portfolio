@@ -1,0 +1,161 @@
+.skills {
+  background-color: #f8f8f8;
+  color: $blue-color;
+  grid-column: 1/-1;
+
+  @media only screen and(max-width:850px) {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+  }
+
+  &__heading {
+    font-size: 5rem;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $title-font;
+  }
+  &__div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 80%;
+    margin: 5rem auto;
+
+    @media only screen and (max-width: 85rem) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.bar {
+  width: 80%;
+  margin: 2em auto;
+  opacity: 0;
+  @media only screen and (max-width: 85rem) {
+    width: 100%;
+  }
+  transition: opacity 0.5 5s ease-in;
+  &__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+}
+.bar.appear {
+  opacity: 1;
+}
+
+.speech-bubble {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  position: absolute;
+  top: -2.7rem;
+  text-align: center;
+  min-width: 3rem;
+  border-radius: 0.3rem;
+  display: none;
+}
+.bar-outer {
+  color: #fff;
+}
+.bar-outer__html,
+.photo,
+.fluent {
+  left: calc(89% - 1.5rem);
+}
+
+.bar-outer__css {
+  left: calc(84% - 1.5rem);
+}
+
+.bar-outer__js {
+  left: calc(77% - 1.5rem);
+}
+
+.bar-outer__jquery {
+  left: calc(74% - 1.5rem);
+}
+
+.bar-outer__bootsrap {
+  left: calc(79% - 1.5rem);
+}
+.bar-outer__python {
+  left: calc(64% - 1.5rem);
+}
+
+.speech-bubble:after {
+  border: 0.5em solid transparent;
+  content: "";
+  margin-left: -0.5em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.bar-outer {
+  height: 1.25em;
+  background: #eeeeee;
+  position: relative;
+  border-radius: 0.3em;
+}
+
+.bar-inner {
+  width: 0;
+  height: 1.25em;
+  border-radius: 0.3em;
+}
+
+.html,
+.bar-outer__html {
+  background: #e53e3e;
+}
+
+.bar-outer__html:after {
+  border-top-color: #e53e3e;
+}
+
+.css,
+.bar-outer__css {
+  background: #ecc94b;
+}
+
+.bar-outer__css:after {
+  border-top-color: #ecc94b;
+}
+.jquery,
+.bar-outer__jquery {
+  background: #d53f8c;
+}
+
+.bar-outer__jquery:after {
+  border-top-color: #d53f8c;
+}
+
+.js,
+.bar-outer__js {
+  background: #4c51bf;
+}
+
+.bar-outer__js:after {
+  border-top-color: #4c51bf;
+}
+
+.bootsrap,
+.bar-outer__bootsrap {
+  background: #3182ce;
+}
+
+.bar-outer__bootsrap:after {
+  border-top-color: #3182ce;
+}
+
+.python,
+.bar-outer__python {
+  background: #319795;
+}
+
+.bar-outer__python:after {
+  border-top-color: #319795;
+}

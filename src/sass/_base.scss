@@ -1,0 +1,42 @@
+// COLOR VARIABLES
+$black-color: #333333;
+$blue-color: #414487;
+$drak-grey-color: #e9e9e9;
+$red-color: #f04035;
+$light-grey-color: #f2f2f2;
+// Fonts
+$title-font: "Playfair Display", serif;
+$text-font: "Roboto", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $text-font;
+  color: $black-color;
+  font-weight: 300;
+  font-synthesis: 1.6;
+}
+.container {
+  display: grid;
+  grid-template-rows: minmax(min-content, 65vh) repeat(5, min-content);
+  grid-template-columns:
+    minmax(min-content, 25rem) repeat(8, minmax(min-content, 14rem))
+    minmax(6rem, 1fr) 1fr;
+  position: relative;
+  @media only screen and(max-width:850px) {
+    grid-template-rows: min-content 60vh repeat(5, min-content);
+  }
+}
