@@ -487,7 +487,8 @@ body {
 
 .projects {
   background-color: #f8f8f8;
-  grid-column: 1/-1; }
+  grid-column: 1/-1;
+  padding-bottom: 5rem; }
   .projects__owned {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

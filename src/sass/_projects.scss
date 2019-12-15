@@ -1,6 +1,7 @@
 .projects {
   background-color: $lighter-color;
   grid-column: 1/-1;
+  padding-bottom: 5rem;
   &__owned {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
