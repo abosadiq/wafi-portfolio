@@ -13,3 +13,14 @@
   font-size: 2rem;
   order: 1;
 }
+
+.projects__headTitle,
+.skills__heading {
+  font-size: 5rem;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $title-font;
+  letter-spacing: 2px;
+  color: $blue-color;
+}

@@ -1,19 +1,10 @@
 .skills {
-  background-color: #f8f8f8;
-  color: $blue-color;
+  background-color: $lighter-color;
   grid-column: 1/-1;
 
   @media only screen and(max-width:850px) {
     grid-column: 1/-1;
     grid-row: 4/5;
-  }
-
-  &__heading {
-    font-size: 5rem;
-    margin-top: 5rem;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: $title-font;
   }
   &__div {
     display: grid;
