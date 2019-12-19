@@ -1,0 +1,19 @@
+.footer {
+  grid-column: 1/-1;
+  padding: 5rem 0 5rem 0;
+  background-color: $drak-grey-color;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--logo {
+      width: 15rem;
+      height: 8rem;
+      margin-bottom: 1.7rem;
+    }
+    &--social {
+      margin-top: 1.7rem;
+    }
+  }
+}
