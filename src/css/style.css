@@ -97,7 +97,9 @@ body {
   .navbar__paragraph {
     text-align: justify;
     padding: 0 1.5rem;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1.6rem; }
     @media only screen and (max-width: 850px) {
       .navbar__paragraph {
         padding: 0 3rem; } }
@@ -236,12 +238,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin: 6rem auto;
-    text-align: justify; }
+    margin: 6rem auto; }
     .about__contenet--parg {
       font-size: 1.8rem;
       order: 3;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      text-align: left; }
 
 .about__contenet--heading-1,
 .about__contenet--heading-2 {
@@ -440,12 +442,12 @@ body {
           padding: 2rem;
           margin-top: -1.5rem; } }
     .experince__work--box p {
-      text-align: justify;
+      text-align: left;
       margin-left: 2rem;
       font-size: 2rem; }
       @media only screen and (max-width: 850px) {
         .experince__work--box p {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           padding: 0 2rem; } }
     .experince__work--1 .fa,
     .experince__work--2 .fa,

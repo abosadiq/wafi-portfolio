@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
-    "devserver": "live-server --browser=firefox",
+    "devserver": "live-server src --browser=firefox",
     "start": "npm-run-all --parallel devserver watch:sass",
     "build": "webpack --mode production"
   },

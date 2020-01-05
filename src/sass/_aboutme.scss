@@ -14,11 +14,13 @@
     align-items: center;
     width: 80%;
     margin: 6rem auto;
-    text-align: justify;
+
     &--parg {
       font-size: 1.8rem;
       order: 3;
       margin-top: 2rem;
+      text-align: left
+       
     }
   }
 }
